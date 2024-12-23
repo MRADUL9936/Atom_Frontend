@@ -36,7 +36,7 @@ function Signup() {
         .then(response => {
             console.log(response.data); // Log the response data
             alert(response.data.Success || "Registration Successful");
-            navigate("/login"); // Navigate to login page on successful registration
+            navigate("/candidate/login"); // Navigate to login page on successful registration
         })
         .catch(error => {
             if (error.response) {
